@@ -1,0 +1,67 @@
+[
+	{
+		"locale": "en",
+		"name": "English",
+		"fontFamily": "'Righteous', cursive",
+		"translation": {
+			"title": "Material Contact Card",
+			"headline": "Marianne",
+			"sub-headline": "Made by zummon",
+			"change-language": "Change language",
+			"toggle-dark-mode": "Toggle dark mode",
+			"translate-by": "(written by zummon)",
+			"about": "About me",
+			"about-detail": "Julie D Lara. Online Signature, I'm getting my respect as a video director. The fashion industry respects me and knows who I am. Online Biography, Thinker. Writer. Food guru. Incurable travel fan. Creator. Beer fanatic. Interested in Rebounding, Embroidery, Knitting",
+
+			"goal": "Goal",
+			"goal-detail": "I create this website to share how to write code for multilingual and light or dark mode website. Go to view source code to see all the code. Then begin learning how to create one like this website by viewing the code or copy to create on your own from this template. Hope you will learn something or inspire you to create or apply to your own website",
+
+			"contact": "Contact",
+			"contact-detail": "1939 May Street, Staffordsville, Kentucky(KY), 41256. JulieD@example.com. 000-000-0000"
+		}
+	},
+	{
+		"locale": "zh",
+		"name": "中国人",
+		"fontFamily": "'Noto Serif SC', serif",
+		"translation": {
+			"title": "物料接触卡",
+			"headline": "玛丽安",
+			"sub-headline": "由 ZUMMON 制造",
+			"change-language": "改变语言",
+			"toggle-dark-mode": "切换黑暗模式",
+			"translate-by": "（自动翻译，不会完全正确）",
+
+			"about": "关于我",
+			"about-detail": "朱莉·德拉（Julie D Lara）。 在线签名，我得到了视频导演的尊敬。 时装界尊重我，知道我是谁。 在线传记，思想家。 作家。 食品大师。 无法治愈的旅行迷。 创作者。 啤酒狂热者。 对弹跳，刺绣，编织感兴趣",
+
+			"goal": "目标",
+			"goal-detail": "我创建了这个网站，以分享如何为多语言和浅色或深色模式网站编写代码。 转到查看源代码以查看所有代码。 然后，通过查看代码或通过此模板复制以自行创建，来开始学习如何创建一个类似此网站的网站。 希望您能学到一些东西或激发您创建或应用到自己的网站",
+
+			"contact": "接触",
+			"contact-detail": "益新大道288号石羊工业园四川渝蓉"
+		}
+	},
+	{
+		"locale": "th",
+		"name": "ไทย",
+		"fontFamily": "'Mali', cursive",
+		"translation": {
+			"title": "นามบัตร Material",
+			"headline": "มารีเนีย",
+			"sub-headline": "สร้างโดย zummon",
+			"change-language": "เปลี่ยนภาษา",
+			"toggle-dark-mode": "สลับโหมดมืด",
+			"translate-by": "(แปลโดย zummon)",
+
+			"about": "เกี่ยวกับฉัน",
+			"about-detail": "Julie D Lara ลายเซ็นออนไลน์ ฉันได้รับความเคารพในฐานะผู้กำกับวิดีโอ วงการแฟชั่นเคารพฉัน และรู้ว่าฉันเป็นใคร ชีวประวัติออนไลน์ นักคิด นักเขียน กูรูด้านอาหาร ติดการเดินทาง ผู้สร้าง คลั่งเบียร์ สนใจใน การตอบสนอง การเย็บปักถักร้อย การถัก",
+
+			"goal": "เป้าหมาย",
+			"goal-detail": "ฉันสร้างเว็บไซต์นี้ขึ้น เพื่อแบ่งปันวิธีการเขียนโค้ดสำหรับเว็บไซต์หลายภาษา และปรับโหมดสว่าง หรือมืดได้ ไปที่ดูซอร์สโค้ด เพื่อดูโค้ดทั้งหมด จากนั้นเริ่มเรียนรู้วิธีสร้างเว็บไซต์แบบนี้ โดยการดูโค้ด หรือคัดลอก เพื่อสร้างขึ้นด้วยตนเองจากเทมเพลตนี้ หวังว่าคุณจะได้เรียนรู้บางสิ่งบางอย่าง หรือสร้างแรงบันดาลใจให้คุณสร้าง หรือนำไปใช้กับเว็บไซต์ของคุณเอง",
+
+			"contact": "ติดต่อ",
+			"contact-detail": "ถ.สุขุมวิท 99999999999999999 แขวงบางนา เขตบางนา"
+		}
+	}
+]
