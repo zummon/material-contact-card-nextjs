@@ -1,3 +1,5 @@
+updating to new version
+
 ### [Codesandbox](https://codesandbox.io/p/github/zummon/material-contact-card-reactjs/)
 
 Something breaks, needs upgrade. Let me know.

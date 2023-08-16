@@ -1,21 +1,22 @@
 import { useContext, useState } from "react";
+import { makeStyles } from "@material-ui/core";
 import {
-  makeStyles,
+  Typography,
+  Tab,
+  Tabs,
+  Paper,
+  Switch,
+  FormControlLabel,
+  Grid,
+  Menu,
+  MenuItem,
   Avatar,
   Box,
   Button,
   ButtonGroup,
   Container,
-  FormControlLabel,
-  Grid,
-  Menu,
-  MenuItem,
-  Paper,
-  Switch,
-  Tab,
-  Tabs,
-  Typography,
-} from "@material-ui/core";
+} from "@mui/material";
+
 import { Context } from "./Context";
 import languages from "./languages.json";
 
