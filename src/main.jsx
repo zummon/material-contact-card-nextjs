@@ -7,7 +7,7 @@ const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
 
 root.render(
-  <Provider>
-    <App />
-  </Provider>
+	<Provider>
+		<App />
+	</Provider>
 );
