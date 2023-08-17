@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { makeStyles } from "@material-ui/core";
+import { makeStyles } from "@mui/styles";
 import {
   Typography,
   Tab,
