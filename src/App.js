@@ -1,5 +1,4 @@
 import { useContext, useState } from "react";
-import { makeStyles } from "@mui/styles";
 import {
   Typography,
   Tab,
@@ -20,9 +19,11 @@ import {
 import { Context } from "./Context";
 import languages from "./languages.json";
 
-const useStyles = makeStyles((theme) => ({
+// makeStyles((theme) => ({
+
+const useStyles = {
   scope: {
-    padding: theme.spacing(3),
+    padding: "24px",
   },
   textDefault: {
     textTransform: "none",
@@ -32,25 +33,26 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "right",
   },
   myPic: {
-    color: theme.palette.primary.main,
-    marginBottom: theme.spacing(3),
+    // color: theme.palette.primary.main,
+    color: "#00e676",
+    marginBottom: "24px",
     marginLeft: "auto",
     marginRight: "auto",
-    height: theme.spacing(15),
-    width: theme.spacing(15),
+    height: "120px",
+    width: "120px",
   },
   myMap: {
     border: 0,
     borderRadius: "5px",
     display: "block",
-    marginBottom: theme.spacing(3),
+    marginBottom: "24px",
     marginLeft: "auto",
     marginRight: "auto",
     maxWidth: "100%",
     height: "300px",
     width: "400px",
   },
-}));
+};
 
 export default () => {
   const classes = useStyles();
@@ -69,13 +71,13 @@ export default () => {
         <Grid item xs={12} sm={6}>
           <Box p={2}>
             <Typography variant="h4">{translation["headline"]}</Typography>
-            <Button variant="text" className={classes.textDefault}>
+            <Button variant="text" style={classes.textDefault}>
               <u>{translation["sub-headline"]}</u>
             </Button>
           </Box>
         </Grid>
         <Grid item xs={12} sm={6}>
-          <Box p={2} className={classes.textRight}>
+          <Box p={2} style={classes.textRight}>
             {/* dark mode part */}
             <FormControlLabel
               labelPlacement="start"
@@ -92,13 +94,13 @@ export default () => {
 
             {/* language part */}
             <ButtonGroup display="block">
-              <Button variant="text" className={classes.textDefault}>
+              <Button variant="text" style={classes.textDefault}>
                 {translation["change-language"]}
               </Button>
               <Button
                 variant="text"
                 color="secondary"
-                className={classes.textDefault}
+                style={classes.textDefault}
                 onClick={(event) => setAnchorEl(event.currentTarget)}
               >
                 {language.name}
@@ -142,9 +144,9 @@ export default () => {
       </Paper>
 
       {/* Body */}
-      <Paper variant="outlined" className={classes.scope}>
+      <Paper variant="outlined" style={classes.scope}>
         <div hidden={tab !== 0}>
-          <Avatar className={classes.myPic}>
+          <Avatar style={classes.myPic}>
             {/* https://undraw.co/ */}
             <svg
               data-name="Layer 1"
@@ -290,7 +292,7 @@ export default () => {
         <div hidden={tab !== 2}>
           {/* https://www.google.com/maps */}
           <iframe
-            className={classes.myMap}
+            style={classes.myMap}
             src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12605.205205101372!2d-82.85086127234254!3d37.82983162410789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sth!4v1616864581381!5m2!1sen!2sth"
             loading="lazy"
           />

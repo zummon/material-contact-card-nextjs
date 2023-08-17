@@ -1,6 +1,6 @@
 import { createContext, useState, useMemo, useEffect } from "react";
 import languages from "./languages.json";
-import { createTheme, adaptV4Theme, ThemeProvider } from "@mui/material/styles";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { CssBaseline } from "@mui/material";
 
 export const Context = createContext();
