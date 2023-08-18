@@ -71,7 +71,7 @@ export default () => {
           <Box p={2}>
             <Typography variant="h4">{translation["headline"]}</Typography>
             <Button variant="text" className={classes.textDefault}>
-              <u>{translation["sub-headline"]}</u>
+              {translation["sub-headline"]}
             </Button>
           </Box>
         </Grid>
@@ -106,7 +106,7 @@ export default () => {
                 </Button>
               }
               label={translation["change-language"]}
-            ></FormControlLabel>
+            />
             <Menu
               keepMounted
               anchorEl={anchorEl}
