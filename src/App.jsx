@@ -9,7 +9,6 @@ import {
   Grid,
   Menu,
   MenuItem,
-  Avatar,
   Box,
   Button,
   Container,
@@ -147,9 +146,9 @@ export default () => {
       {/* Body */}
       <Paper variant="outlined" className={classes.scope}>
         <div hidden={tab !== 0}>
-          <Avatar className={classes.myPic} as="span">
+          <div className={classes.myPic}>
             <MeSvg />
-          </Avatar>
+          </div>
           <Typography paragraph>{translation["about-detail"]}</Typography>
         </div>
         <div hidden={tab !== 1}>
