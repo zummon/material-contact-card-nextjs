@@ -15,7 +15,7 @@ import {
 } from "@mui/material";
 import makeStyles from "@mui/styles/makeStyles";
 import { Context } from "./Context";
-import languages from "./languages.json";
+import languages from "./translates.json";
 import MeSvg from "./MeSvg";
 
 const useStyles = makeStyles((theme) => {
@@ -69,7 +69,7 @@ export default () => {
         <Grid item xs={12} sm={6}>
           <Box p={2}>
             <Typography variant="h4">{translation["headline"]}</Typography>
-            <Button variant="text" className={classes.textDefault}>
+            <Button variant="text" className={classes.textDefault} href="https://zummon.page/" target="_blank">
               {translation["sub-headline"]}
             </Button>
           </Box>
