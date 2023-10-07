@@ -1,5 +1,3 @@
-updating to new version
-
 Something breaks, needs upgrade. Let me know.
 
 ### Dev tools
