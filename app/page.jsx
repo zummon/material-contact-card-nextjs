@@ -1,4 +1,5 @@
 import Header from "./Header" 
+import Body from "./Body" 
 
 export async function generateMetadata({  }) {
   return {
@@ -10,7 +11,10 @@ export async function generateMetadata({  }) {
 export default function Home() {
   return (
     <div className="">
-			<Header />
+      <Header></Header>
+      <div className="container mx-auto">
+			  <Body />
+      </div>
 		</div>
   )
 }

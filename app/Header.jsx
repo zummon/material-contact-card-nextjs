@@ -1,78 +1,87 @@
 "use client";
 
-import {useState} from "react";
-import {
-  Tabs,
-  TabsHeader,
-  TabsBody,
-  Tab,
-  TabPanel,
-} from "@material-tailwind/react";
+import { Switch, Typography, Checkbox, Menu, MenuHandler, MenuList, MenuItem, Button } from "@material-tailwind/react";
+import { useState } from "react";
+import languages from './translates.json'
  
-export default function UnderlineTabs() {
-  const [activeTab, setActiveTab] = useState("html");
-  const data = [
+export default function () {
+  const [openMenu, setOpenMenu] = useState(false);
+ 
+  const menuItems = [
     {
-      label: "HTML",
-      value: "html",
-      desc: `It really matters and then like it really doesn't matter.
-      What matters is the people who are sparked by it. And the people 
-      who are like offended by it, it doesn't matter.`,
+      title: "@material-tailwind/html",
+      description:
+        "Learn how to use @material-tailwind/html, packed with rich components and widgets.",
     },
     {
-      label: "React",
-      value: "react",
-      desc: `Because it's about motivating the doers. Because I'm here
-      to follow my dreams and inspire other people to follow their dreams, too.`,
+      title: "@material-tailwind/react",
+      description:
+        "Learn how to use @material-tailwind/react, packed with rich components for React.",
     },
     {
-      label: "Vue",
-      value: "vue",
-      desc: `We're not always in the position that we want to be at.
-      We're constantly growing. We're constantly making mistakes. We're
-      constantly trying to express ourselves and actualize our dreams.`,
-    },
-    {
-      label: "Angular",
-      value: "angular",
-      desc: `Because it's about motivating the doers. Because I'm here
-      to follow my dreams and inspire other people to follow their dreams, too.`,
-    },
-    {
-      label: "Svelte",
-      value: "svelte",
-      desc: `We're not always in the position that we want to be at.
-      We're constantly growing. We're constantly making mistakes. We're
-      constantly trying to express ourselves and actualize our dreams.`,
+      title: "Material Tailwind PRO",
+      description:
+        "A complete set of UI Elements for building faster websites in less time.",
     },
   ];
+
   return (
-    <Tabs value={activeTab}>
-      <TabsHeader
-        className="rounded-none border-b border-blue-gray-50 bg-transparent p-0"
-        indicatorProps={{
-          className:
-            "bg-transparent border-b-2 border-gray-900 shadow-none rounded-none",
-        }}
-      >
-        {data.map(({ label, value }) => (
-          <Tab
-            key={value}
-            value={value}
-            onClick={() => setActiveTab(value)}
-            className={activeTab === value ? "text-gray-900" : ""}
-          >
-            {label}
-          </Tab>
-        ))}
-      </TabsHeader>
-      <TabsBody>
-        {data.map(({ value, desc }) => (
-          <TabPanel key={value} value={value}>
-            {desc}
-          </TabPanel>
-        ))}
-      </TabsBody>
-    </Tabs>
+    <div className="flex p-4">
+      <div className="mr-auto">
+        <Typography variant="h3" className="font-medium">
+          Contact card
+        </Typography>
+      </div>
+      <div className="">
+        <div className="pl-4">
+          <Switch
+            label={
+              <Typography className="font-medium">
+                Toggle dark mode
+              </Typography>
+            }
+            containerProps={{
+              className: "",
+            }}
+          />
+        </div>
+        <div className="">
+          <div className="">
+            <Menu open={openMenu} handler={setOpenMenu} allowHover>
+              <MenuHandler>
+                <Button
+                  variant="text"
+                  className="flex items-center gap-3 text-base font-normal capitalize tracking-normal"
+                >
+                  Change language{" "}
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className={`h-3.5 w-3.5 transition-transform ${
+                    openMenu ? "rotate-180" : ""
+                  }`}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                  </svg>
+                </Button>
+              </MenuHandler>
+              <MenuList className="">
+                {languages.map((item, index) => 
+                  <MenuItem className="p-0" key={`set-lang-${index}`}>
+                    <label
+                      htmlFor="item-2"
+                      className="flex cursor-pointer items-center gap-2 p-2"
+                    >
+                      <Checkbox
+                        ripple={false}
+                        containerProps={{ className: "p-0" }}
+                        className="hover:before:content-none"
+                      />
+                      {item.name}
+                    </label>
+                  </MenuItem>
+                )}
+              </MenuList>
+            </Menu>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
