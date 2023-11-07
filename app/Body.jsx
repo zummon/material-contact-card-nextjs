@@ -49,7 +49,7 @@ export default function () {
             key={value}
             value={value}
             onClick={() => setActiveTab(value)}
-            className={`py-4 ${activeTab === value ? "text-gray-900" : ""}`}
+            className={`py-4 text-inherit ${activeTab === value ? "" : ""}`}
           >
             {label}
           </Tab>
