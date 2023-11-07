@@ -14,7 +14,7 @@ import Link from 'next/link'
 // - [Fake Address](https://www.fakeaddressgenerator.com/)
 import translates from './translates.json'
 
-export default async function ({ children, }) {
+export default function ({ children, }) {
 	const router = useRouter()
 	const pathname = usePathname()
 
