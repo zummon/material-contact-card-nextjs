@@ -2,13 +2,15 @@
   "": {
     "name": "English",
     "fontFamily": "'Righteous', cursive",
-    
+    "fontFamilySrc": "https://fonts.googleapis.com/css2?family=Righteous&display=swap",
+
     "title": "Material Contact Card",
     "headline": "Marianne",
     "sub-headline": "Made by zummon",
     "change-language": "Change language",
     "toggle-dark-mode": "Toggle dark mode",
     "translate-by": "(Teerapat Anantarattanachai)",
+    
     "about": "About me",
     "about-detail": "Julie D Lara. Online Signature, I'm getting my respect as a video director. The fashion industry respects me and knows who I am. Online Biography, Thinker. Writer. Food guru. Incurable travel fan. Creator. Beer fanatic. Interested in Rebounding, Embroidery, Knitting",
 
@@ -17,12 +19,12 @@
 
     "contact": "Contact",
     "contact-detail": "1939 May Street, Staffordsville, Kentucky(KY), 41256. JulieD@example.com. 000-000-0000"
-  
   },
   "zh": {
     "name": "中国人",
     "fontFamily": "'Noto Serif SC', serif",
-  
+    "fontFamilySrc": "https://fonts.googleapis.com/css2?family=Noto+Serif+SC&display=swap",
+
     "title": "物料接触卡",
     "headline": "玛丽安",
     "sub-headline": "由 ZUMMON 制造",
@@ -42,7 +44,8 @@
   "th": {
     "name": "ไทย",
     "fontFamily": "'Mali', cursive",
-  
+    "fontFamilySrc": "https://fonts.googleapis.com/css2?family=Mali&display=swap",
+
     "title": "นามบัตร Material",
     "headline": "มารีเนีย",
     "sub-headline": "สร้างโดย zummon",

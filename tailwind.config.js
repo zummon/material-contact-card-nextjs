@@ -9,6 +9,11 @@ module.exports = withMT({
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    fontFamily: {
+      sans: [],
+      serif: [],
+      body: [],
+    },
     extend: {},
   },
   plugins: [],
