@@ -20,7 +20,7 @@ export default function ({ children, }) {
 
 	const [dark, setDark] = useState(false)
   const [openLang, setOpenLang] = useState(false)
-  const [activeTab, setActiveTab] = useState("goal");
+  const [activeTab, setActiveTab] = useState("about");
 
 	const lang = pathname.slice(1)
 	const translate = translates[lang] || {}
