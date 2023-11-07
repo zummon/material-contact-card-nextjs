@@ -1,9 +1,12 @@
 import translates from '../translates.json'
 
 export async function generateMetadata({ params }) {
+  const lang = params.lang
+  const translate = translates[lang] || {}
+
   return {
-    title: translates[params.lang].title,
-  	description: translates[params.lang]["goal-detail"],
+    title: translate.title,
+  	description: translate["goal-detail"],
   }
 }
 
